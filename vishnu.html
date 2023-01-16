@@ -1,0 +1,356 @@
+﻿<html>
+
+<head>
+    <title>vishnu</title>
+
+</head>
+
+
+<body id="body" style="  border-radius: 20px; background-color: pink;">
+    <style>
+        Button {
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 5px;
+            margin: 20px;
+        }
+    </style>
+    <mark style="font-size:30px">DID YOU KNOW ABOUT VISHNU✨</mark>
+    <i style="font-size:30px">⁂FILL THE BELOW QUESTION AND ANSWERS  👇🏽</i>
+    <h1 style="font-weight: bold;">
+        1, ⁕ WICH ONE IS VISHNU FAVORATE COLOUR?🎈
+    </h1>
+
+    <button style="background-color:#ff0000" onclick="red()"> Red </button>
+    <button style="background-color:#005aff" onclick="blue()"> Blue </button>
+    <button style="background-color:#00ff4d" onclick="green()"> Green </button>
+
+    <h1 id="ncorrect" style="display:none" name="red">°I don't like this colour😒</h1>
+    <h1 id="correct" style="display:none" name="blue">°I like this colour😍</h1>
+    <h1 id="nocorrect" style="display:none" name="green">°I dont like this colour😧</h1>
+
+
+    <h1 style="font-weight: bolder;">                       2,⁕ VISHNU IS GOOD OR BAD PERSON? 😇😈</h1>
+
+
+    <button style="background-color:#808080" onclick="good()"> GOOD</button>
+    <button style="background-color:#808080" onclick="bad()"> BAD </button>
+
+    <h2 id="good" style="display:none" name="good"> <img src="https://media.tenor.com/lE2c8p1XJfYAAAAC/mua-kiss.gif"></h2>
+    <h2 id="bad" style="display:none" name="bad"> <img src="https://media.tenor.com/qF2newraXz0AAAAC/bart-simpson.gif"></h2>
+
+    <h1 style="font-weight: bolder;">                          3,⁕ WICH ONE IS VISHNU FAVORATE FOOD?😋 </h1>
+
+    <button style="background-color: #00ffa4 " onclick="food1()"> Noodle</button>
+    <button style="background-color: #00ffa4 " onclick="food2()"> Biryani </button>
+    <button style="background-color: #00ffa4 " onclick="food3()"> Parotta</button>
+    <button style="background-color:#00ffa4" onclick="food4()"> Curd rice </button>
+
+    <h2 id="food1" style="display:none" name="food1"> 🍜It's worng</h2>
+    <h2 id="food2" style="display:none" name="food2"> 🥘Correct </h2>
+    <h2 id="food3" style="display:none" name="food3"> 🧇It's worng </h2>
+    <h2 id="food4" style="display:none" name="food4"> 🍚It's worng</h2>
+
+    <h1 style="font-weight: bolder;">                           4, ⁕ VISHNU LOVES❣️</h1>
+
+    <button style="background-color: #ff8900" onclick="pet1()"> Fish</button>
+    <button style="background-color: #ff8900" onclick="pet2()"> Birds </button>
+    <button style="background-color: #ff8900" onclick="pet3()"> Cat</button>
+    <button style="background-color:#ff8900" onclick="pet4()"> Dogs</button>
+
+    <h2 id="pet1" style="display:none" name="pet1"> 🐟 Correct</h2>
+    <h2 id="pet2" style="display:none" name="pet2"> 🕊️Incorrect</h2>
+    <h2 id="pet3" style="display:none" name="pet3"> 🐈Incorrect</h2>
+    <h2 id="pet4" style="display:none" name="pet4"> 🦮 Incorrect</h2>
+
+    <h1 style="font-weight: bolder;">5.⁕ WICH ONE IS VISHNU FAVORATE GAME?</h1>
+
+    <button style="background-color: darkred" onclick="games1()"> Foot bal</button>
+    <button style="background-color: darkred" onclick="games2()"> Cricket</button>
+
+    <h2 id="games1" style="display:none" name="games1">  Correct ⚽</h2>
+    <h2 id="games2" style="display:none" name="games2">  I dont  know about this game😁</h2>
+
+    <h1 style="font-weight: bolder;">                    6,⁕DID YOU KNOW ABOUT VISHNU AGE?</h1>
+
+    <button style="background-color: #ff8900" onclick="age1()"> 19 years</button>
+    <button style="background-color: #ff8900" onclick="age2()"> 20 years</button>
+    <button style="background-color: #ff8900" onclick="age3()"> 21 years</button>
+
+    <h2 id="age1" style="display:none" name="age1"> That is my school days🏫</h2>
+    <h2 id="age2" style="display:none" name="age2"> I came across this age😎</h2>
+    <h2 id="age3" style="display:none" name="age3"> This is my age👍</h2>
+
+    <h1 style="font-weight: bolder;"> 7,⁕ VISHNU IS TALL ARE SHORT?</h1>
+
+    <button style="background-color: #ff00a9" onclick="hight1()">Mediom</button>
+    <button style="background-color: #ff00a9" onclick="hight2()"> Short</button>
+    <button style="background-color: #ff00a9" onclick="hight3()"> Tall</button>
+
+    <h2 id="hight1" style="display:none" name="hight1"> 🕴️Correct</h2>
+    <h2 id="hight2" style="display:none" name="hight2"> 🙍Incorrect</h2>
+    <h2 id="hight3" style="display:none" name="hight3"> 🙎Incorrect</h2>
+</body>
+
+
+</html>
+<script>
+    function red() {
+        document.getElementById("ncorrect").style.display = "block";
+        document.getElementById("correct").style.display = "none";
+        document.getElementById("nocorrect").style.display = "none";
+    }
+    function blue() {
+        document.getElementById("correct").style.display = "block";
+        document.getElementById("ncorrect").style.display = "none";
+        document.getElementById("nocorrect").style.display = "none";
+    }
+    function green() {
+        document.getElementById("correct").style.display = "none";
+        document.getElementById("ncorrect").style.display = "none";
+        document.getElementById("nocorrect").style.display = "block";
+    }
+
+
+    function good() {
+        document.getElementById("good").style.display = "block";
+        document.getElementById("bad").style.display = "none";
+    }
+    function bad() {
+        document.getElementById("bad").style.display = "block";
+        document.getElementById("good").style.display = "none";
+    }
+
+
+    function food1() {
+        document.getElementById("food1").style.display = "block";
+        document.getElementById("food2").style.display = "none";
+        document.getElementById("food3").style.display = "none";
+        document.getElementById("food4").style.display = "none";
+    }
+    function food2() {
+        document.getElementById("food2").style.display = "block";
+        document.getElementById("food1").style.display = "none";
+        document.getElementById("food3").style.display = "none";
+        document.getElementById("food4").style.display = "none";
+    }
+    function food3() {
+        document.getElementById("food3").style.display = "block";
+        document.getElementById("food2").style.display = "none";
+        document.getElementById("food1").style.display = "none";
+        document.getElementById("food4").style.display = "none";
+    }
+    function food4() {
+        document.getElementById("food4").style.display = "block";
+        document.getElementById("food2").style.display = "none";
+        document.getElementById("food3").style.display = "none";
+        document.getElementById("food1").style.display = "none";
+    }
+
+
+    function pet1() {
+        let pet1 = document.getElementById("pet1");
+        if (pet1) {
+            pet1.style.display = "block";
+        }
+
+        let pet2 = document.getElementById("pet2");
+        if (pet2) {
+            pet2.style.display = "none";
+        }
+
+        let pet3 = document.getElementById("pet3");
+        if (pet3) {
+            pet3.style.display = "none";
+        }
+
+        let pet4 = document.getElementById("pet4");
+        if (pet4) {
+            pet4.style.display = "none";
+        }
+
+    }
+    function pet2() {
+        let pet1 = document.getElementById("pet1");
+        if (pet1) {
+            pet1.style.display = "none";
+        }
+
+        let pet2 = document.getElementById("pet2");
+        if (pet2) {
+            pet2.style.display = "block";
+        }
+
+        let pet3 = document.getElementById("pet3");
+        if (pet3) {
+            pet3.style.display = "none";
+        }
+
+        let pet4 = document.getElementById("pet4");
+        if (pet4) {
+            pet4.style.display = "none";
+        }
+    }
+
+
+    function pet3() {
+        let pet3 = document.getElementById("pet3");
+        if (pet3) {
+            pet3.style.display = "block";
+        }
+        let pet1 = document.getElementById("pet1");
+        if (pet1) {
+            pet1.style.display = "none";
+        }
+
+        let pet2 = document.getElementById("pet2");
+        if (pet2) {
+            pet2.style.display = "none";
+        }
+
+        let pet4 = document.getElementById("pet4");
+        if (pet4) {
+            pet4.style.display = "none";
+        }
+    }
+
+
+    function pet4() {
+        let pet4 = document.getElementById("pet4");
+        if (pet4) {
+            pet4.style.display = "block";
+        }
+
+        let pet2 = document.getElementById("pet2");
+        if (pet2) {
+            pet2.style.display = "none";
+        }
+
+        let pet3 = document.getElementById("pet3");
+        if (pet3) {
+            pet3.style.display = "none";
+        }
+
+        let pet1 = document.getElementById("pet1");
+        if (pet1) {
+            pet1.style.display = "none";
+        }
+    }
+
+
+
+    function games1() {
+        let games1 = document.getElementById("games1");
+        if (games1) {
+            games1.style.display = "block";
+        }
+
+        let game2 = document.getElementById("games2");
+        if (game2) {
+            game2.style.display = "none";
+        }
+    }
+
+    function games2() {
+        let games2 = document.getElementById("games2");
+        if (games2) {
+            games2.style.display = "block";
+        }
+        let games1 = document.getElementById("games1");
+        if (games1) {
+            games1.style.display = "none";
+        }
+
+    }
+    function age1() {
+        let age1 = document.getElementById("age1");
+        if (age1) {
+            age1.style.display = "block";
+        }
+        let age2 = document.getElementById("age2");
+        if (age2) {
+            age2.style.display = "none";
+        }
+        let age3 = document.getElementById("age3");
+        if (age3) {
+            age3.style.display = "none";
+        }
+    }
+
+    function age2() {
+        let age2 = document.getElementById("age2");
+        if (age2) {
+            age2.style.display = "block";
+        }
+        let age1 = document.getElementById("age1");
+        if (age1) {
+            age1.style.display = "none";
+        }
+        let age3 = document.getElementById("age3");
+        if (age3) {
+            age3.style.display = "none";
+        }
+    }
+    function age3() {
+        let age3 = document.getElementById("age3");
+        if (age3) {
+            age3.style.display = "block";
+        }
+        let age2 = document.getElementById("age2");
+        if (age2) {
+            age2.style.display = "none";
+        }
+        let age1 = document.getElementById("age1");
+        if (age1) {
+            age1.style.display = "none";
+        }
+    }
+
+    function hight1() {
+        let hight1 = document.getElementById("hight1");
+        if (hight1) {
+            hight1.style.display = "block";
+        }
+        let hight2 = document.getElementById("hight2");
+        if (hight2) {
+            hight2.style.display = "none";
+        }
+        let hight3 = document.getElementById("hight3");
+        if (hight3) {
+           hight3.style.display = "none";
+        }
+    }
+    function hight2() {
+        let hight2 = document.getElementById("hight2");
+        if (hight2) {
+            hight2.style.display = "block";
+        }
+        let hight1 = document.getElementById("hight1");
+        if (hight1) {
+            hight1.style.display = "none";
+        }
+        let hight3 = document.getElementById("hight3");
+        if (hight3) {
+            hight3.style.display = "none";
+        }
+    }
+    function hight3() {
+        let hight3 = document.getElementById("hight3");
+        if (hight3) {
+            hight3.style.display = "block";
+        }
+        let hight1 = document.getElementById("hight1");
+        if (hight1) {
+            hight1.style.display = "none";
+        }
+        let hight2 = document.getElementById("hight2");
+        if (hight2) {
+            hight2.style.display = "none";
+        }
+    }
+
+
+
+
+
+</script>

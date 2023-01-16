@@ -1,0 +1,74 @@
+<Html>
+<head>
+    <Title> index</Title>
+    <style>
+        Body {
+            width: 1000px;
+            height: 1000px;
+            color: black;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body id="body" align="center">
+
+    <h1>welcome to all</h1>
+    <h1 style="color:darkblue;">
+        VISHNU.V
+    </h1>
+
+    <p id="GFG_UP"
+       style="font-size: 20px;
+              font-weight: bold;">
+
+
+    </p>
+    <button onclick="GFG_Fun()">
+        click here
+    </button>
+
+
+    <button onclick="pageXOffset()">next page</button>
+
+
+    <br>
+    <br>
+    <div id="backG">HAVE A GREAT DAY.</div>
+
+
+
+
+    <script>
+        var el_up = document.getElementById('GFG_UP');
+        var rgbValue = [255, 0, 0];
+        el_up.innerHTML =
+            "Click on the button to select .";
+
+        function setColor() {
+            rgbValue[0] = Math.round(Math.random() * 255);
+            rgbValue[1] = Math.round(Math.random() * 255);
+            rgbValue[2] = Math.round(Math.random() * 255);
+            var color = Math.round(((parseInt(rgbValue[0]) * 299) +
+                (parseInt(rgbValue[1]) * 587) +
+                (parseInt(rgbValue[2]) * 114)) / 1000);
+            var textColor = (color > 125) ? 'black' : 'white';
+            var backColor =
+                'rgb(' + rgbValue[0] + ', ' + rgbValue[1] + ', '
+                + rgbValue[2] + ')';
+
+            document.getElementById('body').style.color=textColor;
+            document.getElementById('body').style.backgroundColor= backColor;
+        }
+
+        function GFG_Fun() {
+            setColor();
+        }
+
+        function pageXOffset() {
+            window.location.href = "../HTML/vishnu.html";
+
+
+        }
+    </script>
+</body>
+
